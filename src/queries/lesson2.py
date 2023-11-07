@@ -1,10 +1,8 @@
-import datetime
-
-from sqlalchemy import select, and_, or_
+from sqlalchemy import select
 from sqlalchemy.sql.functions import count, func
 
 from src.database import session_maker
-from src.models import Customer, Order, Product, Employee, Category, Supplier
+from src.models import Customer, Order, Product, Employee, Supplier
 
 
 # Выбрать все данные из таблицы customers
