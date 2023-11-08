@@ -137,7 +137,8 @@ def l2_query12():
     print(result)
 
 
-# Найти сумму, на которую имеется товаров (кол-во * цену) причём таких, которые планируется продавать и в будущем (см. на поле discontinued)
+# Найти сумму, на которую имеется товаров (кол-во * цену) причём таких,
+# которые планируется продавать и в будущем (см. на поле discontinued)
 def l2_query13():
     query = select(func.sum(Product.units_in_stock * Product.unit_price)).where(Product.discontinued != 1)
     print(query)
